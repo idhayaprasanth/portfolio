@@ -68,7 +68,7 @@
     <div style="display: flex;gap: 35px;">
     <a href="https://github.com/idhayaprasanth/attendance">
     <div class="shine" >view Code</div></a>
-    <a href="">
+    <a href="#" onclick="openModal('attendance')">
         <div class="shine" style="margin-bottom: 100px;" >Image gallary</div></a>
     </div>
 </div>
@@ -89,7 +89,7 @@
     <div style="display:flex;flex-direction: row;gap: 35px;">
         <a href="https://github.com/idhayaprasanth/ticketbooking">
     <div class="shine">view code</div></a>
-    <a href="">
+    <a  href="#" onclick="openModal('ticket')">
     <div class="shine" style="margin-bottom: 100px;" >Image gallary</div></a>
 </div>
 
@@ -154,7 +154,48 @@
   </div>
 
 </div>
+
+
+
+<div id="attendance" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('attendance')">&times;</span>
+        <div style="display: flex;">
+            <img src="attendance design.png" width="50%">
+            <img src="image3 attendance.png" width="50%">
+        </div>
+        
+        <img src="image attendance.png" width="95%">
+        <img src="image2 attendance.png" width="95%">
+    </div>
+</div>
+
+<div id="ticket" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('ticket')">&times;</span>
+        
+        <h4 style="color: darkblue;text-align: center;">Images will be updated soon...</h4>
+    </div>
+</div>
+
 <script>
+
+     // Function to open the modal
+     function openModal(modalId) {
+        var modal = document.getElementById(modalId);
+        if (modal) {
+            modal.style.display = 'block';
+        }
+    }
+
+    // Function to close the modal
+    function closeModal(modalId) {
+        var modal = document.getElementById(modalId);
+        if (modal) {
+            modal.style.display = 'none';
+        }
+    }
+
     const divs = document.querySelectorAll('#container');
     let currentIndex = 0;
 
