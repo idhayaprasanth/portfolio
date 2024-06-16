@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  .about{
+    margin: 0px 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 30px;
+    align-items: center;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.671) ;
+    
+  }
+
+  a {
+    all: unset; /* Reset all styles */
+    cursor: pointer;
+}
+
+
+
+  #logo{
+    width: 40px;
+  }
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skills{
+    background-color: white;
+    color:black;
+    width:450px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+
+}
+
+  #contianer{
+    display: flex;
+    justify-content: space-between;
+  }
+
+.nav {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 40px;
+    position:fixed; /* Make the nav fixed */
+    top: 0; /* Position it at the top */
+    left: 0; /* Position it at the left */
+    right: 0; /* Extend it to the right */
+    background-color: black; /* Add a background color to distinguish it from the content */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.nav p {
+    color: white;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    
+}
+
+.burger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    gap: 40px;
+}
+
+.container {
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+#shine {
+
+    margin: 5px;
+    font-family: Comic Sans MS !important;
+    font-weight: 900;
+    background:  linear-gradient(45deg, #7ea0aa, #7ef0ae, #8eeff5, #e5ebef, #79a6b7, #6febf8, #79f0ab, #eef1f3, #fff, #86d3c7, #24b9e3, #e1e7eb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+}
+.shine {
+    font-size: large;
+    font-weight: bold;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 6px;
+    width: fit-content;
+    background: linear-gradient(
+      to right,
+      #7953cd 20%,
+      #00affa 30%,
+      #0190cd 70%,
+      #764ada 80%
+    );
+    color: white;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+}
+
+#project{
+    margin: 0px 10%;
+    display: flex;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.671) ;
+    padding-top: 100PX;
+    padding-bottom: 0px;
+    margin-bottom: 30px;
+
+}
+.line{
+    width: 100%;
+    height: 5px;
+    border-top: 2px solid rgba(255, 255, 255, 0.671) ;
+
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.column p {
+    color: rgb(212, 207, 207);
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    gap: 30px;
+}
+
+.box {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 400px;
+    height: 300px;
+    background-color: #7050b9;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 40px 10%;
+    
+}
+#heading{
+    font-size: x-small;
+    font-weight:bold;
+    color: #6dd699fb;
+}
+#underline{
+    text-decoration: underline;
+}
+.box iframe {
+   
+    
+   width: 100%;
+   height: 100%;
+     /* Increased duration for slow motion */
+}
+.box img:hover {
+    transform: scale(1.1); /* Adjust the scale value as needed */
+}
+
+#title{
+    color: white;
+    font-size: xx-large;
+}
+
+#title:hover{
+    color: #7050b9;
+}
+.home{
+   
+    margin-top: 100px;
+    margin-left:200px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    padding-right: 150px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    margin-bottom: 15px;
+  
+}
+
+.home p {
+    color: white;
+   font-family: Comic Sans MS;
+}
+
+.button{
+    background-color: #00affa  ;
+    padding: 15px 25px;
+    width: fit-content;
+    color: white;
+}
+.logo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+   
+}
+#align{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-right: 50px;
+    animation: fadeIn 2s ease-in-out;
+    
+}
+
+
+
